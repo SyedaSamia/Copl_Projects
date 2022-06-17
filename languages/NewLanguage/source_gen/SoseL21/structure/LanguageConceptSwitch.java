@@ -9,22 +9,46 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Boolean = 0;
-  public static final int EmptyStatement = 1;
-  public static final int Integer = 2;
-  public static final int Reference = 3;
-  public static final int SoSeWorksheet = 4;
-  public static final int Statement = 5;
-  public static final int Variable = 6;
+  public static final int BinaryExpression = 0;
+  public static final int Boolean = 1;
+  public static final int BooleanLiteral = 2;
+  public static final int DivExpression = 3;
+  public static final int EmptyStatement = 4;
+  public static final int EqualsExpression = 5;
+  public static final int Expression = 6;
+  public static final int Integer = 7;
+  public static final int MinusExpression = 8;
+  public static final int MulExpression = 9;
+  public static final int NotEqExpression = 10;
+  public static final int NumberLiteral = 11;
+  public static final int PlusExpression = 12;
+  public static final int Reference = 13;
+  public static final int SoSeWorksheet = 14;
+  public static final int Statement = 15;
+  public static final int StringLiteral = 16;
+  public static final int Type = 17;
+  public static final int Variable = 18;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xe5e1a54d7b5f41a7L, 0x9d2d73de1700459bL);
+    builder.put(0x158c2c06e11aade2L, BinaryExpression);
     builder.put(0x4c875829485576a8L, Boolean);
+    builder.put(0x158c2c06e11d655fL, BooleanLiteral);
+    builder.put(0x158c2c06e11ae1e7L, DivExpression);
     builder.put(0x4c87582948540e5aL, EmptyStatement);
+    builder.put(0x158c2c06e11af0d3L, EqualsExpression);
+    builder.put(0x158c2c06e11a2f32L, Expression);
     builder.put(0x4c875829485576a7L, Integer);
+    builder.put(0x158c2c06e11af840L, MinusExpression);
+    builder.put(0x158c2c06e11affc0L, MulExpression);
+    builder.put(0x158c2c06e11b0738L, NotEqExpression);
+    builder.put(0x158c2c06e11d6541L, NumberLiteral);
+    builder.put(0x158c2c06e11b0aefL, PlusExpression);
     builder.put(0x4c875829485576a9L, Reference);
     builder.put(0x7f0bd6aaa6578930L, SoSeWorksheet);
     builder.put(0x7f0bd6aaa6584379L, Statement);
+    builder.put(0x158c2c06e11d6550L, StringLiteral);
+    builder.put(0x4eaf011e18235689L, Type);
     builder.put(0x7f0bd6aaa6584016L, Variable);
     myIndex = builder.seal();
   }
