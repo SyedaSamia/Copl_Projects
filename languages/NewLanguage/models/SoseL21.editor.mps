@@ -13,6 +13,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -29,6 +31,11 @@
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -77,7 +84,11 @@
   </registry>
   <node concept="24kQdi" id="4M7m2_8l162">
     <ref role="1XX52x" to="24ga:4M7m2_8l0Tq" resolve="EmptyStatement" />
-    <node concept="3F0ifn" id="4M7m2_8l164" role="2wV5jI" />
+    <node concept="3F0ifn" id="4M7m2_8l164" role="2wV5jI">
+      <node concept="VPxyj" id="1mcb0rx8$tJ" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="4M7m2_8l5hJ">
     <ref role="1XX52x" to="24ga:7WbPEEAm40m" resolve="Variable" />
@@ -213,6 +224,20 @@
     <node concept="3F0A7n" id="1mcb0rx7mlF" role="2wV5jI">
       <ref role="1NtTu8" to="24ga:1mcb0rx7mlw" resolve="value" />
     </node>
+  </node>
+  <node concept="24kQdi" id="1mcb0rx7EXC">
+    <ref role="1XX52x" to="24ga:1mcb0rx7EIC" resolve="ExpressionStatement" />
+    <node concept="3F1sOY" id="1mcb0rx7EXE" role="2wV5jI">
+      <ref role="1NtTu8" to="24ga:1mcb0rx7EID" resolve="expr" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="1mcb0rx8neZ">
+    <ref role="aqKnT" to="24ga:4M7m2_8l0Tq" resolve="EmptyStatement" />
+    <node concept="22hDWj" id="1mcb0rx8nf0" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="1mcb0rx8tIg">
+    <ref role="aqKnT" to="24ga:1mcb0rx7EIC" resolve="ExpressionStatement" />
+    <node concept="22hDWj" id="1mcb0rx8tIh" role="22hAXT" />
   </node>
 </model>
 

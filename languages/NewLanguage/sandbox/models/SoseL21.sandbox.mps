@@ -7,9 +7,6 @@
   <imports />
   <registry>
     <language id="e5e1a54d-7b5f-41a7-9d2d-73de1700459b" name="SoseL21">
-      <concept id="5514473203068925608" name="SoseL21.structure.Boolean" flags="ng" index="4OyU1">
-        <property id="1552664379594143796" name="value" index="3O$5gM" />
-      </concept>
       <concept id="5514473203068925607" name="SoseL21.structure.Integer" flags="ng" index="4OyUe">
         <property id="1552664379594139044" name="value" index="3O$4Ay" />
       </concept>
@@ -26,6 +23,12 @@
       <concept id="1552664379594204496" name="SoseL21.structure.StringLiteral" flags="ng" index="3O$k_m">
         <property id="1552664379594204497" name="value" index="3O$k_n" />
       </concept>
+      <concept id="1552664379593994034" name="SoseL21.structure.Expression" flags="ng" index="3O_wcO" />
+      <concept id="1552664379594026466" name="SoseL21.structure.BinaryExpression" flags="ng" index="3O_C7$">
+        <child id="1552664379593157404" name="right" index="3Owksq" />
+        <child id="1552664379593157403" name="left" index="3Owkst" />
+      </concept>
+      <concept id="1552664379594050287" name="SoseL21.structure.PlusExpression" flags="ng" index="3O_MrD" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -39,10 +42,6 @@
       <property role="TrG5h" value="a" />
       <property role="3O$4Ay" value="1243" />
     </node>
-    <node concept="4OyU1" id="1mcb0rx7ku1" role="3pkTqf">
-      <property role="TrG5h" value="b" />
-      <property role="3O$5gM" value="true" />
-    </node>
     <node concept="3pkTqW" id="1mcb0rx7laF" role="3pkTqf">
       <property role="TrG5h" value="c" />
       <node concept="3O$k_7" id="1mcb0rx7s9U" role="3O_wcQ">
@@ -55,8 +54,26 @@
         <property role="3O$k_n" value="Hello World" />
       </node>
     </node>
-    <node concept="4OPpN" id="1mcb0rx7uux" role="3pkTqf" />
-    <node concept="4OPpN" id="1mcb0rx7uuC" role="3pkTqf" />
+    <node concept="3pkTqW" id="2Q3i9B_y5lP" role="3pkTqf">
+      <property role="TrG5h" value="e" />
+      <node concept="3O_MrD" id="2Q3i9B_y5mj" role="3O_wcQ">
+        <node concept="3O$k_m" id="2Q3i9B_y5ms" role="3Owkst">
+          <property role="3O$k_n" value="dsaf" />
+        </node>
+        <node concept="3O$k_7" id="2Q3i9B_y5mv" role="3Owksq">
+          <property role="3O$k_4" value="123" />
+        </node>
+      </node>
+    </node>
+    <node concept="3pkTqW" id="2Q3i9B_y5my" role="3pkTqf">
+      <property role="TrG5h" value="fg" />
+      <node concept="3O_wcO" id="2Q3i9B_y5m$" role="3O_wcQ" />
+    </node>
+    <node concept="4OPpN" id="22Fdve6s$HB" role="3pkTqf" />
+    <node concept="4OPpN" id="22Fdve6stmc" role="3pkTqf" />
+    <node concept="4OPpN" id="22Fdve6stmm" role="3pkTqf" />
+    <node concept="4OPpN" id="22Fdve6stmx" role="3pkTqf" />
+    <node concept="4OPpN" id="22Fdve6stmH" role="3pkTqf" />
     <node concept="4OPpN" id="1mcb0rx7uuK" role="3pkTqf" />
     <node concept="4OPpN" id="1mcb0rx7uuT" role="3pkTqf" />
   </node>

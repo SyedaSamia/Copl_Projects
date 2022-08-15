@@ -16,18 +16,19 @@ public final class LanguageConceptSwitch {
   public static final int EmptyStatement = 4;
   public static final int EqualsExpression = 5;
   public static final int Expression = 6;
-  public static final int Integer = 7;
-  public static final int MinusExpression = 8;
-  public static final int MulExpression = 9;
-  public static final int NotEqExpression = 10;
-  public static final int NumberLiteral = 11;
-  public static final int PlusExpression = 12;
-  public static final int Reference = 13;
-  public static final int SoSeWorksheet = 14;
-  public static final int Statement = 15;
-  public static final int StringLiteral = 16;
-  public static final int Type = 17;
-  public static final int Variable = 18;
+  public static final int ExpressionStatement = 7;
+  public static final int Integer = 8;
+  public static final int MinusExpression = 9;
+  public static final int MulExpression = 10;
+  public static final int NotEqExpression = 11;
+  public static final int NumberLiteral = 12;
+  public static final int PlusExpression = 13;
+  public static final int Reference = 14;
+  public static final int SoSeWorksheet = 15;
+  public static final int Statement = 16;
+  public static final int StringLiteral = 17;
+  public static final int Type = 18;
+  public static final int Variable = 19;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xe5e1a54d7b5f41a7L, 0x9d2d73de1700459bL);
@@ -38,6 +39,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x4c87582948540e5aL, EmptyStatement);
     builder.put(0x158c2c06e11af0d3L, EqualsExpression);
     builder.put(0x158c2c06e11a2f32L, Expression);
+    builder.put(0x158c2c06e11eaba8L, ExpressionStatement);
     builder.put(0x4c875829485576a7L, Integer);
     builder.put(0x158c2c06e11af840L, MinusExpression);
     builder.put(0x158c2c06e11affc0L, MulExpression);
