@@ -23,7 +23,6 @@
       <concept id="1552664379594204496" name="SoseL21.structure.StringLiteral" flags="ng" index="3O$k_m">
         <property id="1552664379594204497" name="value" index="3O$k_n" />
       </concept>
-      <concept id="1552664379593994034" name="SoseL21.structure.Expression" flags="ng" index="3O_wcO" />
       <concept id="1552664379594026466" name="SoseL21.structure.BinaryExpression" flags="ng" index="3O_C7$">
         <child id="1552664379593157404" name="right" index="3Owksq" />
         <child id="1552664379593157403" name="left" index="3Owkst" />
@@ -61,13 +60,15 @@
           <property role="3O$k_n" value="dsaf" />
         </node>
         <node concept="3O$k_7" id="2Q3i9B_y5mv" role="3Owksq">
-          <property role="3O$k_4" value="123" />
+          <property role="3O$k_4" value="12" />
         </node>
       </node>
     </node>
-    <node concept="3pkTqW" id="2Q3i9B_y5my" role="3pkTqf">
-      <property role="TrG5h" value="fg" />
-      <node concept="3O_wcO" id="2Q3i9B_y5m$" role="3O_wcQ" />
+    <node concept="3pkTqW" id="2Q3i9B_yzfx" role="3pkTqf">
+      <property role="TrG5h" value="h" />
+      <node concept="3O$k_m" id="2Q3i9B_yzfR" role="3O_wcQ">
+        <property role="3O$k_n" value="sad" />
+      </node>
     </node>
     <node concept="4OPpN" id="22Fdve6s$HB" role="3pkTqf" />
     <node concept="4OPpN" id="22Fdve6stmc" role="3pkTqf" />
