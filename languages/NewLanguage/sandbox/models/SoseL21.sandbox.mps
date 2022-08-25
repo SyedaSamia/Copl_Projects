@@ -7,10 +7,7 @@
   <imports />
   <registry>
     <language id="e5e1a54d-7b5f-41a7-9d2d-73de1700459b" name="SoseL21">
-      <concept id="5514473203068833370" name="SoseL21.structure.EmptyStatement" flags="ng" index="4OPpN" />
-      <concept id="9154646695984204080" name="SoseL21.structure.SoSeWorksheet" flags="ng" index="3pn5Yq">
-        <child id="9154646695984250917" name="content" index="3pkTqf" />
-      </concept>
+      <concept id="9154646695984204080" name="SoseL21.structure.SoSeWorksheet" flags="ng" index="3pn5Yq" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -20,7 +17,6 @@
   </registry>
   <node concept="3pn5Yq" id="7WbPEEAm3OU">
     <property role="TrG5h" value="Main" />
-    <node concept="4OPpN" id="22Fdve6s$HB" role="3pkTqf" />
   </node>
 </model>
 
